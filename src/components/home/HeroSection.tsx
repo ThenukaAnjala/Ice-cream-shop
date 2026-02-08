@@ -47,16 +47,16 @@ export default function HeroSection({
   imageSrc,
 }: Props) {
   return (
-    <main className="relative z-10 mx-auto grid h-[calc(100vh-96px)] max-w-6xl items-center gap-10 px-6 pb-16 lg:grid-cols-[1.05fr_0.95fr]">
+    <main className="relative z-10 mx-auto grid h-[calc(100dvh-88px)] max-w-6xl items-start gap-8 px-6 pb-8 sm:items-center sm:gap-10 sm:pb-12 lg:h-[calc(100vh-96px)] lg:grid-cols-[1.05fr_0.95fr]">
       <div>
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-600">
+        <p className="text-[0.6rem] uppercase tracking-[0.3em] text-slate-600 sm:text-xs">
           Scroll to explore
         </p>
-        <h1 className="font-display mt-4 text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
+        <h1 className="font-display mt-3 text-3xl leading-[1.05] sm:mt-4 sm:text-5xl lg:text-6xl">
           DELICIOUS ICE CREAM
         </h1>
 
-        <div className="relative mt-6 h-[200px] sm:h-[220px]">
+        <div className="relative mt-5 h-[170px] sm:mt-6 sm:h-[220px]">
           {products.map((product, index) => (
             <motion.div
               key={product.id}
@@ -75,21 +75,21 @@ export default function HeroSection({
                   kcal
                 </span>
               </h2>
-              <p className="mt-3 max-w-md text-slate-700">
+              <p className="mt-2 max-w-md text-sm text-slate-700 sm:mt-3 sm:text-base">
                 {product.description}
               </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-6 flex gap-3">
+        <div className="mt-5 flex flex-wrap gap-3 sm:mt-6">
           <motion.button
             onClick={() => onAddToCart(activeProduct)}
             onMouseEnter={onHoverStart}
             onMouseLeave={onHoverEnd}
             whileHover={{ y: -2, scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative overflow-hidden rounded-full bg-[var(--accent)] px-6 py-3 font-semibold text-white shadow-lg shadow-black/10"
+            className="group relative w-full overflow-hidden rounded-full bg-[var(--accent)] px-6 py-3 font-semibold text-white shadow-lg shadow-black/10 sm:w-auto"
           >
             <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-white/0 via-white/40 to-white/0 transition duration-500 group-hover:translate-x-full" />
             <span className="relative z-10">Shop now</span>
@@ -101,16 +101,16 @@ export default function HeroSection({
             onMouseLeave={onHoverEnd}
             whileHover={{ y: -2, scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="rounded-full bg-white/80 px-6 py-3 font-semibold text-slate-900 shadow-sm"
+            className="w-full rounded-full bg-white/80 px-6 py-3 font-semibold text-slate-900 shadow-sm sm:w-auto"
           >
             View menu
           </motion.button>
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center sm:pt-0">
         <div
-          className="relative h-[260px] w-[260px] sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]"
+          className="relative h-[210px] w-[210px] sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]"
           style={{ perspective: "1000px" }}
           onMouseMove={onTilt}
           onMouseLeave={() => {

@@ -22,7 +22,7 @@ export default function BackgroundDecor({
   return (
     <>
       <motion.div
-        className="absolute -top-24 right-[-8%] h-[680px] w-[680px] transform-gpu opacity-80"
+        className="absolute -top-28 right-[-32%] h-[520px] w-[520px] transform-gpu opacity-80 sm:-top-24 sm:right-[-8%] sm:h-[680px] sm:w-[680px]"
         style={{ y: blobY }}
       >
         <svg viewBox="0 0 600 600" className="h-full w-full">
@@ -34,11 +34,11 @@ export default function BackgroundDecor({
       </motion.div>
 
       <motion.div
-        className="absolute -left-24 top-1/3 h-80 w-80 transform-gpu rounded-full bg-white/40 blur-3xl"
+        className="absolute -left-28 top-1/3 h-64 w-64 transform-gpu rounded-full bg-white/40 blur-3xl sm:-left-24 sm:h-80 sm:w-80"
         style={{ y: haloY }}
       />
       <motion.div
-        className="absolute bottom-0 right-1/3 h-96 w-96 transform-gpu rounded-full bg-white/30 blur-3xl"
+        className="absolute bottom-0 right-1/3 h-72 w-72 transform-gpu rounded-full bg-white/30 blur-3xl sm:h-96 sm:w-96"
         style={{ y: haloY }}
       />
 

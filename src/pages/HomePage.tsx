@@ -268,6 +268,7 @@ export default function HomePage() {
 
         <HomeHeader
           cartCount={cartCount}
+          accentColor={activeProduct.accent}
           onCartOpen={() => setCartOpen(true)}
           onMenuOpen={openMenu}
           onHome={() => window.scrollTo({ top: 0, behavior: "smooth" })}

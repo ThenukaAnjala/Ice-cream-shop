@@ -16,8 +16,10 @@ export default function AboutHeader({
   onHoverEnd,
 }: Props) {
   return (
-    <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <div className="text-xl font-semibold tracking-[0.3em]">SCOOPY DOO</div>
+    <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:py-6">
+      <div className="text-lg font-semibold tracking-[0.26em] sm:text-xl sm:tracking-[0.3em]">
+        SCOOPY DOO
+      </div>
       <nav className="hidden gap-8 text-xs uppercase tracking-[0.3em] text-slate-700 md:flex">
         <motion.button
           onClick={onHome}
