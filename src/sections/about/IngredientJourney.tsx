@@ -3,7 +3,7 @@ import type { RefObject } from "react"
 import type { Ingredient } from "../../types/home"
 
 type Props = {
-  sectionRef: RefObject<HTMLDivElement>
+  sectionRef: RefObject<HTMLDivElement | null>
   ingredients: Ingredient[]
   floatMap: MotionValue<number>[]
 }

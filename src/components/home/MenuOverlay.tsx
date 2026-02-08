@@ -17,7 +17,7 @@ type Props = {
   onClose: () => void
   onHoverStart: () => void
   onHoverEnd: () => void
-  ingredientLayerRef: RefObject<HTMLDivElement>
+  ingredientLayerRef: RefObject<HTMLDivElement | null>
   imageSrc: (file: string) => string
 }
 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import type { RefObject } from "react"
 
 type Props = {
-  sectionRef: RefObject<HTMLDivElement>
+  sectionRef: RefObject<HTMLDivElement | null>
   counter: number
   onViewMenu: () => void
   onHoverStart: () => void

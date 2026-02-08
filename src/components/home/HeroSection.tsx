@@ -18,7 +18,7 @@ type Props = {
   activeProduct: Product
   onAddToCart: (product: Product) => void
   onOpenMenu: () => void
-  menuButtonRef: RefObject<HTMLButtonElement>
+  menuButtonRef: RefObject<HTMLButtonElement | null>
   onHoverStart: () => void
   onHoverEnd: () => void
   tiltX: MotionValue<number>
