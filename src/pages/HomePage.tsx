@@ -18,6 +18,7 @@ import { useCursor } from "../hooks/useCursor"
 import { useTilt } from "../hooks/useTilt"
 import { useScrollLock } from "../hooks/useScrollLock"
 import CustomCursor from "../components/common/CustomCursor"
+import DevSignature from "../components/common/DevSignature"
 import BackgroundDecor from "../components/home/BackgroundDecor"
 import HomeHeader from "../components/home/HomeHeader"
 import HeroSection from "../components/home/HeroSection"
@@ -292,6 +293,11 @@ export default function HomePage() {
           onTiltReset={resetTilt}
           floatingTransition={floatingTransition}
           imageSrc={imageSrc}
+        />
+
+        <DevSignature
+          name="Thenuka Gunasekara"
+          href="https://www.linkedin.com/in/thenuka-gunasekara-2b0957215/"
         />
       </motion.div>
 

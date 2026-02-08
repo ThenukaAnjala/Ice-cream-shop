@@ -8,6 +8,7 @@ import { journeyIngredients, storySprinkles } from "../data/about"
 import { useCursor } from "../hooks/useCursor"
 import CustomCursor from "../components/common/CustomCursor"
 import BackButton from "../components/common/BackButton"
+import DevSignature from "../components/common/DevSignature"
 import AboutHeader from "../components/about/AboutHeader"
 import StoryHero from "../sections/about/StoryHero"
 import IngredientJourney from "../sections/about/IngredientJourney"
@@ -180,6 +181,11 @@ export default function AboutPage() {
           onViewMenu={() => navigate("/")}
           onHoverStart={handleInteractiveEnter}
           onHoverEnd={handleInteractiveLeave}
+        />
+
+        <DevSignature
+          name="Thenuka Gunasekara"
+          href="https://www.linkedin.com/in/thenuka-gunasekara-2b0957215/"
         />
       </motion.div>
     </div>

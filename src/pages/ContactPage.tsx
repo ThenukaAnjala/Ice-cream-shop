@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useCursor } from "../hooks/useCursor"
 import CustomCursor from "../components/common/CustomCursor"
 import BackButton from "../components/common/BackButton"
+import DevSignature from "../components/common/DevSignature"
 import ContactInfo from "../sections/contact/ContactInfo"
 import ContactForm from "../sections/contact/ContactForm"
 
@@ -141,6 +142,11 @@ export default function ContactPage() {
           onHoverEnd={handleInteractiveLeave}
         />
       </motion.div>
+
+      <DevSignature
+        name="Thenuka Gunasekara"
+        href="https://www.linkedin.com/in/thenuka-gunasekara-2b0957215/"
+      />
     </div>
   )
 }
